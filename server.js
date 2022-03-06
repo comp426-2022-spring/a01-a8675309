@@ -32,9 +32,9 @@ fs.readFile("./www/index.html", "utf8", (err, data) =>{
     if (err){
         console.error(err)
         return
-        process.exit(1)
+        
     }
-})
+
 
 // If there is an error, put it on the console error, return, and exit with error code 1. 
 // Do not be nice about exiting.
@@ -51,11 +51,11 @@ fs.readFile("./www/index.html", "utf8", (err, data) =>{
 // 3. end with the data that you are reading in from ./www/index.html.
 
 
-const sever = http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
 
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
-
+    res.end(data)
 
 })
 
@@ -63,9 +63,11 @@ const sever = http.createServer((req, res) => {
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
 
-sever.listen(port, () => {
+server.listen(port, () => {
     console.log(`Server running at port ${port}`)
 })
 
 
 // That's it! You're all done!
+
+})
