@@ -1,0 +1,22 @@
+{
+  "name": "a01-a8675309",
+  "version": "1.0.0",
+  "description": "programming",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a01-a8675309.git"
+  },
+  "author": "a8675309",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a01-a8675309/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a01-a8675309#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
